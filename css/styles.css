@@ -35,10 +35,16 @@ header li {
   color: tomato;
 }
 /* NAV BAR  */
-nav {
+.menu {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100000;
 }
 .navbar .navbar-brand {
   font-size: 1.5em;
@@ -62,13 +68,34 @@ nav {
 }
 
 /* -----------CAROUSEL---------- */
+
 .carousel__text {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 85%;
+  margin: auto;
   text-align: center;
 }
-
+.carousel__text {
+  font-size: 3em;
+}
+.carousel__item h3 {
+  margin: 20px;
+}
+.col-3 {
+  border-radius: 10px;
+  padding: 20px;
+}
+.col-3.item1 {
+  background-color: rgb(78, 125, 239);
+}
+.col-3.item2 {
+  background-color: rgb(239, 199, 82);
+}
+.col-3.item3 {
+  background-color: rgb(222, 80, 127);
+}
+.col-3.item4 {
+  background-color: rgb(132, 230, 154);
+}
 /* -----------FEATURES---------- */
 
 /* -----------COURSES---------- */
