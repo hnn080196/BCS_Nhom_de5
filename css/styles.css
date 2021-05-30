@@ -126,6 +126,7 @@
 }
 
 .about__content .btn__style {
+  padding: 14px 30px;
   background-color: var(--secondary-color);
   font-size: 16px;
   font-weight: 600;
@@ -235,6 +236,32 @@ footer h3 {
 .footer__form .footer__form--btn:hover {
   opacity: 0.8;
 }
-/* -----------BACK-TO-TOP BUTTON---------- */
+.copyright {
+  background-color: #040a17;
+  color: white;
+}
 
+/* -----------BACK-TO-TOP BUTTON---------- */
+html .backToTop {
+  display: inline-block;
+  width: 40px ;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  color: white;
+  background-color: var(--primary-color);
+
+  position: fixed;
+  right: 10px;
+  bottom: 90px;
+  z-index: 100;
+}
 /* -----------RIGHTSIDE BAR---------- */
+
+/* -----------media-query-HOA--------- */
+
+@media (max-width:991.8px) {
+  .footer__item--contact{
+    border-style: none;
+  }
+}
