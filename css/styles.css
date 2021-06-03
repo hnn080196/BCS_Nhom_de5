@@ -81,7 +81,9 @@ header li {
 }
 .navbar__form a{
   margin-left: 10px;
+  
 }
+
 
 /* -----------CAROUSEL---------- */
 .carousel-text {
@@ -154,6 +156,28 @@ header li {
   border: none;
 }
 .carousel-text a:hover {
+  background-color: tomato;
+}
+.carousel-indicators .carousel__btn{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.carousel-indicators{
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+}
+.carousel-indicators li{
+  opacity: 1;
+  transition: all .5s;
+}
+.carousel__btn.active{
+  background-color: tomato;
+}
+.carousel-indicators li:hover{
   background-color: tomato;
 }
 /* -----------FEATURES---------- */
