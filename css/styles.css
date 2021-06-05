@@ -80,7 +80,7 @@ header li {
   right: 50px;
 }
 .navbar__form a{
-  margin-left: 10px;
+  margin-left: 5px;
   
 }
 
@@ -89,11 +89,9 @@ header li {
 .carousel-text {
   position: absolute;
   left: 10%;
-  top: 0;
-  bottom:0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 40%;
-  max-width: 600px;
-
   color: white;
 }
 .carousel-text h3 {
@@ -211,7 +209,7 @@ header li {
   text-align: center;
   font-weight: 500;
   font-size: 1rem;
-  padding: 20px 10px;
+  padding: 10px 10px;
   color: white;
   opacity: 0.6;
   transition: all 0.5s;
@@ -242,7 +240,15 @@ header li {
   }
   
 }
+@media (max-width:576px){
+  .carousel-text h3{
+    font-size: 20px;
+  }
+}
 @media (max-width:992px) {
+  header{
+    display: none;
+  }
   .carousel-text h3{
     font-size: 50px;
   }
