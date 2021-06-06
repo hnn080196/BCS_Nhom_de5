@@ -11,6 +11,8 @@
   --secondary-color: #ff6e65;
   --font-color: #707070;
   --bg-color: #fff;
+  --bg-dark-color:#161c2d;
+  
 }
 
 /* -----------HEADER---------- */
@@ -107,6 +109,8 @@
 }
 .course__item img {
   border-radius: 5px 5px 0 0;
+  display: block;
+  width: 100%;
 }
 .course__text-top li i {
   color: var(--secondary-color);
@@ -383,6 +387,10 @@
 
   text-decoration: none;
   color: var(--primary-color);
+  transition: all 0.5s ease-in-out;
+}
+.instruc__social a:hover {
+  opacity: 0.8;
 }
 .instruc__social a:nth-child(2) {
   margin: 0px 8px;
@@ -438,11 +446,11 @@ footer h3 {
 }
 
 .footer__item ul li a {
+  
   display: block;
   font-size: 14px;
   color: var(--primary-light);
   text-decoration: none;
-  margin-bottom: 10px;
   opacity: 0.8;
   transition: all 0.5s;
 }
@@ -539,10 +547,47 @@ html .backToTop {
 }
 /* -----------RIGHTSIDE BAR---------- */
 
+/* -----------Dark theme---------- */
+.dark {
+  background-color: var(--bg-dark-color);
+  color: white;
+}
+.dark .course {
+  background-color: #121725;
+}
+.dark .course__text {
+  background-color: #00000000;
+  
+}
+.dark .course__text p {
+  color: rgb(255, 255, 255);
+  opacity: .8;
+}
+.dark .feature-gd {
+  background-color: var(--bg-dark-color);
+}
+.dark .icon-info h5 {
+  color: white;
+}
+.dark .icon i {
+  color: #4867b0;
+}
+.dark .timer {
+  color: white;
+}
+.dark .count-text{
+  color: white;
+}
+
 /* -----------media-query-HOA--------- */
 
 @media (max-width: 991.8px) {
   .footer__item--contact {
     border-style: none;
+  }
+}
+@media (max-width:735.9px) {
+  footer {
+    padding: 40px 0;
   }
 }
