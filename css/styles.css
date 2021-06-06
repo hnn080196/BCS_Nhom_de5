@@ -16,8 +16,177 @@
 
 /* -----------HEADER---------- */
 
-/* -----------CAROUSEL---------- */
+header {
+  background-color: rgb(19, 35, 141);
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 50px;
+}
+.header__container ul {
+  margin-bottom: 0;
+}
+header li {
+  display: inline-block;
+  line-height: 20px;
+  margin-right: 30px;
+}
+.header__container a {
+  text-decoration: none;
+  color: white;
+  line-height: 20px;
+  transition: all 1s;
+}
+.header__container a:hover {
+  color: tomato;
+}
+/* NAV BAR  */
+.menu {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100000;
+}
+.navbar .navbar-brand {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgb(19, 35, 141);
+  transition: all 1s;
+}
+.navbar .navbar-brand:hover {
+  color: tomato;
+}
+.nav-item.active#home a {
+  color: tomato;
+}
+.navbar-light .navbar-nav .nav-link,
+.dropdown-item {
+  color: black;
+  font-weight: 600;
+  transition: all 0.5s;
+  padding: 10px 20px;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.dropdown-item:hover {
+  color: tomato;
+  background-color: white;
+}
+.form-control {
+  padding-right: 35px;
+  border-radius: 20px;
+  position: relative;
+}
+.form-inline .btn {
+  position: absolute;
+  right: 50px;
+}
+.navbar__form a{
+  margin-left: 5px;
+  
+}
 
+
+/* -----------CAROUSEL---------- */
+.carousel-text {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  color: white;
+}
+.carousel-text h3 {
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: bold;
+}
+.carousel__text {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+.carousel__item {
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 3em;
+  min-height: 186px;
+}
+.carousel__item i {
+  
+  padding-bottom: 20px;
+}
+.carousel__item a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+.carousel__item h3{
+  font-size: 1.5rem;
+}
+
+.carousel__item a:hover {
+  color: black;
+}
+.carousel__item.item1 {
+  background-color: rgb(78, 125, 239);
+}
+.carousel__item.item2 {
+  background-color: rgb(239, 199, 82);
+}
+.carousel__item.item3 {
+  background-color: rgb(222, 80, 127);
+}
+.carousel__item.item4 {
+  background-color: rgb(132, 230, 154);
+}
+.carousel2 {
+  margin-top: -5rem;
+}
+.carousel-text a {
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 14px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #060606;
+  border-radius: 4px;
+  background: #fff;
+  border: none;
+}
+.carousel-text a:hover {
+  background-color: tomato;
+}
+.carousel-indicators .carousel__btn{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.carousel-indicators{
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+}
+.carousel-indicators li{
+  opacity: 1;
+  transition: all .5s;
+}
+.carousel__btn.active{
+  background-color: tomato;
+}
+.carousel-indicators li:hover{
+  background-color: tomato;
+}
 /* -----------FEATURES---------- */
 
 /* -----------COURSES---------- */
@@ -544,6 +713,63 @@ html .backToTop {
   z-index: 100;
 }
 /* -----------RIGHTSIDE BAR---------- */
+
+.sidebar__container {
+  position: fixed;
+  text-align: center;
+  right: 0;
+  top: 70px;
+  background-color: #0d1326;
+  border-radius: 20px 0 0 20px;
+  z-index: 1000000000;
+}
+.sidebar__item {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 10px;
+  color: white;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+.sidebar__item:hover {
+  opacity: 1;
+}
+.sidebar__item a {
+  color: white;
+  text-decoration: none;
+}
+.sidebar__item i {
+  display: block;
+  padding-bottom: 10px;
+}
+.sidebar__item1 {
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid grey;
+}
+
+@media (max-width: 1200px) {
+  .carousel__item h3{
+    font-size: 20px;
+  }
+  .carousel__item {
+    font-size: 2.5em;
+  }
+  
+}
+@media (max-width:576px){
+  .carousel-text h3{
+    font-size: 20px;
+  }
+}
+@media (max-width:992px) {
+  header{
+    display: none;
+  }
+  .carousel-text h3{
+    font-size: 50px;
+  }
 
 /* -----------Dark theme---------- */
 .dark {
