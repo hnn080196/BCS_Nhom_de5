@@ -101,6 +101,10 @@
   border-bottom-right-radius: 8px;
   background: #fff;
 }
+.course__text h3:hover {
+  color: #ff6e65;
+  transition: 0.5s all;
+}
 .course__item:hover {
   box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
   transition: 1s all;
@@ -170,7 +174,7 @@
 /* -----------SERVICES---------- */
 .services {
   background: url(../img/bg3.jpg) no-repeat bottom;
-  -webkit-background-size: cover;
+  background-size: cover;
 }
 .feature-gd {
   background: #fff;
