@@ -127,7 +127,7 @@ header li {
 }
 
 /* -----------CAROUSEL---------- */
-.carousel-text {
+.carousel-item__text {
   position: absolute;
   left: 10%;
   top: 50%;
@@ -135,10 +135,22 @@ header li {
   width: 40%;
   color: white;
 }
-.carousel-text h3 {
+
+.carousel-item__text h3{
   font-size: 70px;
-  line-height: 80px;
-  font-weight: bold;
+  font-weight: 800;
+  max-width: 800px;
+}
+.carousel-item .carousel-item__text a.btn--style{
+  background-color: white;
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-weight: 600;
+  transition: all .5s;
+}
+.carousel-item .carousel-item__text a.btn--style:hover{
+  background-color: tomato;
+  color: white;
 }
 .carousel__text {
   width: 85%;
@@ -163,7 +175,6 @@ header li {
 .carousel__item h3 {
   font-size: 1.5rem;
 }
-
 .carousel__item a:hover {
   color: black;
 }
@@ -182,20 +193,7 @@ header li {
 .carousel2 {
   margin-top: -5rem;
 }
-.carousel-text a {
-  text-decoration: none;
-  margin-top: 20px;
-  padding: 14px 30px;
-  font-weight: 600;
-  font-size: 16px;
-  color: #060606;
-  border-radius: 4px;
-  background: #fff;
-  border: none;
-}
-.carousel-text a:hover {
-  background-color: tomato;
-}
+
 .carousel-indicators .carousel__btn {
   height: 15px;
   width: 15px;
@@ -835,7 +833,7 @@ html .backToTop {
   .footer__item--contact {
     border-style: none;
   }
-  .timer {
+  .timer, .carousel-item__text h3 {
     font-size: 35px;
   }
   header {
@@ -864,6 +862,18 @@ html .backToTop {
   footer {
     padding: 40px 0;
   }
+  .carousel-item__text h3{
+    font-size: 25px;
+  }
+  .carousel-item .carousel-item__text a.btn--style{
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 5px 10px;
+  }
+  .carousel__text{
+    width: 75%;
+    
+  }
 }
 
 @media (max-width: 1200px) {
@@ -874,8 +884,4 @@ html .backToTop {
     font-size: 2.5em;
   }
 }
-@media (max-width: 576px) {
-  .carousel-text h3 {
-    font-size: 20px;
-  }
-}
+
