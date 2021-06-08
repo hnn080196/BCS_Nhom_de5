@@ -267,6 +267,11 @@ html .title h2::after {
 .feature .feature__item h3 {
   margin: 24px 0 15px 0;
   font-size: 24px;
+  cursor: pointer;
+  
+}
+.feature .feature__item h3:hover{
+  color: var(--secondary-color);
 }
 /* -----------COURSES---------- */
 .course {
@@ -718,7 +723,7 @@ footer h3 {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
 }
 .footer__form h4 {
   font-size: 35px;
