@@ -152,10 +152,6 @@ header li {
   background-color: tomato;
   color: white;
 }
-
-
-
-
 .carousel__text {
   width: 85%;
   margin: auto;
@@ -862,7 +858,7 @@ html .backToTop {
   }
 }
 
-@media (max-width: 736px) {
+@media (max-width: 735.99px) {
   footer {
     padding: 40px 0;
   }
@@ -873,6 +869,9 @@ html .backToTop {
     font-size: 15px;
     margin-top: 5px;
     padding: 5px 10px;
+  }
+  .carousel__text{
+    width: 75%;
     
   }
 }
