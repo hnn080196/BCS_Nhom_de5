@@ -267,6 +267,11 @@ html .title h2::after {
 .feature .feature__item h3 {
   margin: 24px 0 15px 0;
   font-size: 24px;
+  cursor: pointer;
+  
+}
+.feature .feature__item h3:hover{
+  color: var(--secondary-color);
 }
 /* -----------COURSES---------- */
 .course {
@@ -350,6 +355,10 @@ html .title h2::after {
   border-bottom-right-radius: 8px;
   background: #fff;
 }
+.course__text h3:hover {
+  color: #ff6e65;
+  transition: 0.5s all;
+}
 .course__item:hover {
   box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
   transition: 1s all;
@@ -421,7 +430,7 @@ html .title h2::after {
 /* -----------SERVICES---------- */
 .services {
   background: url(../img/bg3.jpg) no-repeat bottom;
-  -webkit-background-size: cover;
+  background-size: cover;
 }
 .feature-gd {
   background: #fff;
@@ -718,7 +727,7 @@ footer h3 {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
 }
 .footer__form h4 {
   font-size: 35px;
